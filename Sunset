@@ -1,0 +1,35 @@
+var xPos = 200;
+var yPos = 150;
+var backgrd1 = 255;
+var backgrd2 = 68;
+var backgrd3 = 0;
+draw = function() {
+    background(backgrd1,backgrd2,backgrd3);
+    //the sun
+    fill(255, 242, 0);
+    ellipse(xPos, yPos, 200, 200);
+    fill(0, 0, 0);
+    //plants
+    triangle(50,100,180,400,220,400);
+    triangle(150,200,210,400,250,400);
+    triangle(250,150,210,400,250,400);
+    triangle(350,150,210,400,250,400);
+    //bird#1   
+    ellipse(250,250,60,50);
+    ellipse(220,232,30,35);
+    triangle(250,235,290,225,290,250);
+    triangle(194,230,220,225,230,240);
+    //bird#2
+    ellipse(120,215,60,50);
+    ellipse(145,192,30,35);
+    triangle(170,190,150,195,150,185);
+    triangle(115,215,75,223,75,199);
+    //sunset
+    yPos = yPos +1;
+    //background color
+    backgrd1 = backgrd1 - 0.5;
+    backgrd2 = backgrd2 - 0.5;
+    
+};
+
+
